@@ -7,7 +7,7 @@
   - ./vendor/bin/doctrine-migrations  --db-configuration=src/config/db.php  --configuration=src/Migrations/migrations.php  migrate
 - Run command sudo chmod 600 public.key
 - Run command for running php built-in server : php -S localhost:8888 -t web  web/index.php
-- Authenticate through this route : http://localhost:8888/access_token
+- Authenticate through this route : POST http://localhost:8888/access_token
   with payload : 
 	 - `{
 	"grant_type":"client_credentials",
